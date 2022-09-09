@@ -1,0 +1,558 @@
+/************ TABLE OF CONTENTS ***************
+
+    01. Questionnaire related classes
+    02. Questions related classes
+    03. Answers related classes
+    04. Buttons classes
+    05. Images classes
+    06. DIV classes
+    07. Misc properties 
+
+
+**********************************************/
+
+
+
+
+/* 01. Questionnaire related classes */
+
+
+.container-questionnaire {
+      display: flex;
+      justify-content: left
+}
+
+.table-questionnaire {
+      border: 1px;
+      text-align: center;
+}
+
+.image-questionnaire {
+      flex-basis: 5%
+}
+
+.text-questionnaire {
+      padding-right: 20px;
+}
+
+.text-questionnaire-title {
+      padding-right: 25px;
+}
+
+.input-questionnaire {
+      font-family: "Hind", sans-serif;
+      font-size: 70px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 0;
+      color: rgba(255, 255, 255, 0.5);
+      background: rgba(0, 0, 0, 0);
+      width: 100%;
+}
+
+.input-questionnaire:hover {
+      margin-bottom: 30px;
+      line-height: 1.8;
+}
+
+.input-image-questionnaire {
+      font-family: "Hind", sans-serif;
+      font-size: 20px;
+      height: 50px;
+      width: 500%;
+      color: rgba(255, 255, 255, 0.5);
+      background: rgba(0, 0, 0, 0.8);
+}
+
+.questionnaire-line {
+      width: 905px;
+      margin: auto;
+      color: #4186c4;
+      margin-top: 5px;
+}
+
+#new-questionnaire:hover+.questionnaire-line {
+      display: none;
+}
+
+
+
+
+/* 02. Questions related classes */
+
+
+.title-questions {
+      word-wrap: break-word;
+      word-break: break-word;
+      margin-top: auto;
+      margin-bottom: auto;
+}
+
+.testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 3px;
+}
+
+.form-questions {
+      width: 100%;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 2px 5px #ccc;
+}
+
+.label-questions {
+      margin-top: 1px;
+      margin-bottom: 1px;
+}
+
+.input-questions {
+      width: auto;
+      margin-right: 15px;
+      vertical-align: middle;
+}
+
+.input-newQuestion {
+      font-family: "Hind", sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.5;
+      width: 100%;
+      color: rgba(14, 17, 51, 0.5);
+      background: rgba(0, 0, 0, 0);
+}
+
+.input-newQuestion:hover {
+      line-height: 3.0;
+      margin-bottom: 15px;
+}
+
+
+
+
+/* 03. Answers related classes */
+
+
+.label-reponses {
+      margin-top: auto;
+      margin-bottom: auto;
+      display: inline;
+}
+
+.input-reponses {
+      width: auto;
+      margin-right: 15px;
+}
+
+.input-newReponse {
+      font-family: "Hind", sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 1.2;
+      margin-bottom: 5px;
+      width: 100%;
+
+      color: #6d6e75;
+      background: rgba(0, 0, 0, 0);
+}
+
+.input-newReponse:hover {
+      line-height: 2.5;
+      margin-bottom: 10px;
+}
+
+.question-answer {
+      display: flex;
+      word-wrap: break-word;
+      word-break: break-word;
+}
+
+
+
+
+/* 04. Buttons classes */
+
+
+.btn-block {
+      margin-top: 20px;
+      text-align: center;
+}
+
+.btn-save-changes {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      outline: none;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      background-color: #095484;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+}
+
+.btn-save-changes:hover {
+      background-color: #0666a3;
+}
+
+.btn-del-answer {
+      float: right;
+      max-height: 24px;
+      max-width: 24px;
+      background-color: transparent;
+}
+
+.btn-del-question {
+      margin-left: 10px;
+      max-height: 32px;
+      max-width: 32px;
+      background-color: transparent;
+}
+
+.btn-modifier {
+      background-color: transparent;
+      border-color: transparent;
+}
+
+.btn-modifier:hover {
+      background-color: #bb2d3b;
+      border-color: #b02a37;
+}
+
+.btn-check:focus+.btn-modifier,
+.btn-modifier:focus {
+      color: #fff;
+      background-color: #bb2d3b;
+      border-color: #b02a37;
+      box-shadow: 0 0 0 .25rem rgba(225, 83, 97, .5)
+}
+
+.small-btn {
+      font-size: 12px;
+      padding: 0 10px;
+      margin-top: 10px;
+      height: 23px;
+      line-height: 21px;
+}
+
+.medium-btn {
+      font-size: 16px;
+      padding: 0 18px;
+      margin-top: 10px;
+      height: 36px;
+      line-height: 33px;
+}
+
+.big-btn {
+      font-size: 20px;
+      padding: 0 25px;
+      margin-top: 10px;
+      height: 46px;
+      line-height: 44px;
+}
+
+.huge-btn {
+      font-size: 62px;
+      padding: 0 110px;
+      margin-top: 10px;
+      height: 124px;
+      line-height: 132px;
+      font-weight: 700;
+
+}
+
+.btn-noborder {
+      border: none;
+}
+
+.btn-middle {
+      margin-left: 20%;
+      margin-right: 20%;
+}
+
+.btn-change-img {
+      background-color: rgba(18, 20, 21, 0.5);
+      color: #ffffff;
+      height: 50px;
+      width: 200px;
+      padding: 0;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.btn-change-img:hover {
+      background-color: rgba(237, 235, 234, 0.5);
+      color: #000000;
+}
+
+.btn-change-img:hover > .img-change-img {
+      filter: invert(0%);
+      -webkit-filter: invert(0%);
+}
+
+
+
+
+/* 05. Images classes */
+
+
+.img-del-question {
+      float: right;
+      max-height: 32px;
+      max-width: 32px;
+}
+
+.img-del-answer {
+      float: right;
+      max-height: 24px;
+      max-width: 24px;
+}
+
+.img-del-answer:hover,
+.img-del-question:hover {
+      filter: invert(16%) sepia(55%) saturate(4005%) hue-rotate(346deg) brightness(92%) contrast(105%);
+      -webkit-filter: invert(16%) sepia(55%) saturate(4005%) hue-rotate(346deg) brightness(92%) contrast(105%);
+}
+
+.change-img-questionnaire {
+      position: absolute;
+      z-index: 1;
+}
+
+.input-change-img-questionnaire {
+      position: absolute;
+      z-index: 1;
+      margin-left: -10%;
+}
+
+.img-change-img {
+      max-width:  32px;
+      max-height: 32px;
+      margin-right: 10px;
+      filter: invert(100%);
+      -webkit-filter: invert(100%);
+}
+
+.img-change-img:hover {
+      filter: invert(0%);
+      -webkit-filter: invert(0%);
+}
+
+
+
+
+/* 06. Div classes */
+
+
+.dim-page {
+      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+}
+
+.div-change-img-questionnaire {
+      float: right; 
+      position: relative; 
+      margin-top: 20px
+}
+
+.div-result-good {
+      border-top-style: none;
+      border-right-color: black;
+      border-right-style: solid;
+      border-right-width: 3px;
+      border-bottom-style: none;
+      border-left-color: black;
+      border-left-style: solid;
+      border-left-width: 3px;
+      background-color: #00cc00ec;
+      color: #000000;
+      margin-bottom: 5px;
+}
+
+.div-result-good-unanswered {
+      border-top-style: none;
+      border-right-color: black;
+      border-right-style: solid;
+      border-right-width: 3px;
+      border-bottom-style: none;
+      border-left-color: black;
+      border-left-style: solid;
+      border-left-width: 3px;
+      background-color: #35df3fb0;
+      color: #000000;
+}
+
+.div-result-bad {
+      border-top-style: none;
+      border-right-color: black;
+      border-right-style: solid;
+      border-right-width: 3px;
+      border-bottom-style: none;
+      border-left-color: black;
+      border-left-style: solid;
+      border-left-width: 3px;
+      background-color: #cc0000ec;
+      color: #000000;
+      margin-bottom: 5px;
+}
+
+.div-question {
+      display: flex; 
+      width: 115%; 
+      margin-top: 45px;
+      margin-bottom: 10px;
+}
+
+.div-title-wrapper {
+      display: flex;
+      align-items: center;
+}
+
+.div-title-wrapper2 {
+      display: flex;
+      align-items: center;
+      width: 100%;
+}
+
+.div-confirmation {
+      position: fixed;
+      display: none;
+      height: 200px;
+      width: 800px;
+      top: 50%;
+      left: 50%;
+      margin-top: -150px;
+      margin-left: -400px;
+      border-radius: 25px;
+      z-index: 3;
+      background-color:rgba(226, 227, 241, 0.85);
+      text-align: center;
+}
+
+
+
+
+/* 07. Misc properties */
+
+
+.popupWrapper {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+      right: 120px;
+      bottom: 50px;
+}
+
+.popup {
+      display: flex;
+      align-items: center;
+      position: relative;
+      height: 80px;
+      width: 220px;
+      margin-top: 10px;
+      border-radius: 20px;
+      background-color: rgba(18, 20, 21, 0.5);;
+}
+
+.popup:hover {
+      filter: invert(100%);
+      -webkit-filter: invert(100%);
+}
+
+.popup-text {
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 5px;
+      margin-right: 5px;
+      color: #ffffff;
+      font-size: 18px;
+      text-align: center;
+      word-wrap: break-word;
+      word-break: break-word;
+      width: 100%;
+}
+
+
+
+
+.no-border {
+      border-top-style: hidden;
+      border-right-style: hidden;
+      border-left-style: hidden;
+      border-bottom-style: groove;
+}
+
+.no-outline:focus {
+      outline: none;
+}
+
+.left-margin {
+      margin-left: auto;
+}
+
+.smol-width {
+      width: 90%;
+}
+
+.margin-left-small {
+      margin-left: 10px;
+}
+
+.margin-top-bottom {
+      margin-top: 5px;
+      margin-bottom: 5px;
+}
+
+.p-title {
+      float: right;
+      font-family: "Hind", sans-serif;
+      font-size: 26px;
+      color: #0e1133;
+      margin-top: 0px;
+      font-weight: 700;
+      line-height: 1.2;
+}
+
+.p-input {
+      float: right;
+      font-family: "Hind", sans-serif;
+      font-size: 26px;
+      color: #0e1133;
+      margin-top: 0px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-left: 10px;
+      height: 30px;
+      width: 75px;
+      text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+      -moz-appearance: textfield;
+}
+
+
+@media only screen and (max-width: 1366px) {
+      #FuckYou {
+            width: 20%;
+      }
+      .input-change-img-questionnaire {
+            margin-left: -7.5%;
+      }
+      .input-image-questionnaire {
+            width: 380%;
+      }
+
+      /* .popup {
+            width: 80%;
+      } */
+}
